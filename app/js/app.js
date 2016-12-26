@@ -3,13 +3,7 @@ import m from 'mithril'
 
 const Page = {
   list: function () {
-    return function () {
-      return [
-        { title: 'github', href: 'http://github.com' },
-        { title: 'gitlab', href: 'http://gitlab.com' },
-        { title: 'bitbucket', href: 'http://bitbucket.org' }
-      ]
-    }
+    return m.request({ method: "GET", url: "http://localhost:3000/" })
   }
 }
 
